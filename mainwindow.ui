@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">font: 9pt &quot;Calisto MT&quot;;
+   <string notr="true">font: 11pt &quot;Tw Cen MT Condensed Extra Bold&quot;;
 color: rgb(0, 0, 0);</string>
   </property>
   <widget class="QWidget" name="centralwidget">

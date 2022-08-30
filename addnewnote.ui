@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>128</height>
+    <height>136</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -38,7 +38,8 @@
         <widget class="QLabel" name="label">
          <property name="styleSheet">
           <string notr="true">color: rgb(0, 0, 0);
-font: 11pt &quot;Calisto MT&quot;;</string>
+font: 11pt &quot;Tw Cen MT Condensed Extra Bold&quot;;
+</string>
          </property>
          <property name="text">
           <string>Application:</string>
@@ -49,7 +50,7 @@ font: 11pt &quot;Calisto MT&quot;;</string>
         <widget class="QLabel" name="label_2">
          <property name="styleSheet">
           <string notr="true">color: rgb(0, 0, 0);
-font: 11pt &quot;Calisto MT&quot;;</string>
+font: 11pt &quot;Tw Cen MT Condensed Extra Bold&quot;;</string>
          </property>
          <property name="text">
           <string>Login:</string>
@@ -60,7 +61,7 @@ font: 11pt &quot;Calisto MT&quot;;</string>
         <widget class="QLabel" name="label_3">
          <property name="styleSheet">
           <string notr="true">color: rgb(0, 0, 0);
-font: 11pt &quot;Calisto MT&quot;;
+font: 11pt &quot;Tw Cen MT Condensed Extra Bold&quot;;
 </string>
          </property>
          <property name="text">
@@ -135,6 +136,9 @@ font: 11pt &quot;Calisto MT&quot;;
    </item>
    <item>
     <widget class="QPushButton" name="pushButton">
+     <property name="styleSheet">
+      <string notr="true">font: 11pt &quot;Tw Cen MT Condensed Extra Bold&quot;;</string>
+     </property>
      <property name="text">
       <string>Accept</string>
      </property>

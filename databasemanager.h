@@ -13,9 +13,6 @@ public:
 
     QSqlDatabase GetDataBase ();
 
-   // void addDataInAlbum(int index) const;
-    void removeData(int id) const;
-
 
     std::unique_ptr<QSqlDatabase> UnitsDB;
     std::unique_ptr<QSqlQuery> query;

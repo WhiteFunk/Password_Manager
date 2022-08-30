@@ -16,9 +16,11 @@ Widget::Widget(QWidget *parent)
     ui->setupUi(this);
     this->setFixedSize(504,410);
     this->setWidgetStyle();
-//    Qt::WindowFlags flags;
-//    flags = Qt::FramelessWindowHint;
-//    QWidget::setWindowFlags (flags);
+
+    Qt::WindowFlags flags;
+    flags = Qt::Tool;
+    QWidget::setWindowFlags (flags);
+
 }
 
 Widget::~Widget()
@@ -158,9 +160,7 @@ void Widget::on_pushButton_2_clicked()
 }
 
 
-/*******************************************
- * Функция устанавливает QSS для виджетов.
- *******************************************/
+
 void Widget::setWidgetStyle()
 {
     this->setStyleSheet(
@@ -186,10 +186,10 @@ void Widget::setWidgetStyle()
         "border:1px solid #0078d7;"
     "}"
     "QComboBox{"
-        "border:1px solid #aaa;"
-        "background-color: qlineargradient(spread:pad, x1:0.585, y1:1, x2:0.506, y2:0, "
+       "border:1px solid #aaa;"
+       "background-color: qlineargradient(spread:pad, x1:0.585, y1:1, x2:0.506, y2:0, "
                            "stop:0 rgba(180, 180, 180, 255), stop:1 rgba(232, 232, 232, 255));"
-        "border-radius:3px;"
+    "border-radius:3px;"
         "color:#333;"
     "}"
     "QComboBox::drop-down {"
@@ -263,9 +263,6 @@ void Widget::setWidgetStyle()
         "color:#111;"
     "}");
 }
-
-
-
 
 
 void Widget::on_pushButton_3_clicked()

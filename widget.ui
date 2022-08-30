@@ -17,6 +17,9 @@
    <iconset>
     <normaloff>:/images/password.png</normaloff>:/images/password.png</iconset>
   </property>
+  <property name="styleSheet">
+   <string notr="true">font: 11pt &quot;Tw Cen MT Condensed Extra Bold&quot;;</string>
+  </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
@@ -34,7 +37,7 @@
         <item>
          <widget class="QCheckBox" name="latinCheck">
           <property name="text">
-           <string>Буквы латинского алфавита</string>
+           <string>Latin</string>
           </property>
           <property name="checked">
            <bool>true</bool>
@@ -44,21 +47,21 @@
         <item>
          <widget class="QComboBox" name="latinCombo">
           <property name="styleSheet">
-           <string notr="true"/>
+           <string notr="true">font: 11pt &quot;Tw Cen MT Condensed Extra Bold&quot;;</string>
           </property>
           <item>
            <property name="text">
-            <string>Все</string>
+            <string>All</string>
            </property>
           </item>
           <item>
            <property name="text">
-            <string>Только большие</string>
+            <string>Only capital letters</string>
            </property>
           </item>
           <item>
            <property name="text">
-            <string>Только маленькие</string>
+            <string>Only lower case</string>
            </property>
           </item>
          </widget>
@@ -70,7 +73,7 @@
         <item>
          <widget class="QCheckBox" name="ciryllicCheck">
           <property name="text">
-           <string>Кириллические символы</string>
+           <string>Cyrillic</string>
           </property>
           <property name="checked">
            <bool>false</bool>
@@ -79,19 +82,22 @@
         </item>
         <item>
          <widget class="QComboBox" name="ciryllicCombo">
+          <property name="styleSheet">
+           <string notr="true">font: 11pt &quot;Tw Cen MT Condensed Extra Bold&quot;;</string>
+          </property>
           <item>
            <property name="text">
-            <string>Все</string>
+            <string>All</string>
            </property>
           </item>
           <item>
            <property name="text">
-            <string>Только большие</string>
+            <string>Only capital letters</string>
            </property>
           </item>
           <item>
            <property name="text">
-            <string>Только маленькие</string>
+            <string>Only lower case</string>
            </property>
           </item>
          </widget>
@@ -103,7 +109,7 @@
         <item>
          <widget class="QCheckBox" name="didgitCheck">
           <property name="text">
-           <string>Цифры</string>
+           <string>Numbers</string>
           </property>
           <property name="checked">
            <bool>true</bool>
@@ -112,6 +118,9 @@
         </item>
         <item>
          <widget class="QLineEdit" name="didgitEdit">
+          <property name="styleSheet">
+           <string notr="true">font: 10pt &quot;Tw Cen MT Condensed Extra Bold&quot;;</string>
+          </property>
           <property name="text">
            <string>0-9</string>
           </property>
@@ -124,7 +133,7 @@
         <item>
          <widget class="QCheckBox" name="symbolCheck">
           <property name="text">
-           <string>Символы</string>
+           <string>Symbols</string>
           </property>
           <property name="checked">
            <bool>true</bool>
@@ -133,6 +142,9 @@
         </item>
         <item>
          <widget class="QLineEdit" name="symbolEdit">
+          <property name="styleSheet">
+           <string notr="true">font: 10pt &quot;Tw Cen MT Condensed Extra Bold&quot;;</string>
+          </property>
           <property name="text">
            <string>%@$#!</string>
           </property>
@@ -145,12 +157,15 @@
         <item>
          <widget class="QLabel" name="label">
           <property name="text">
-           <string>Количество символов в пароле</string>
+           <string>Number of symbols in password</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QSpinBox" name="lettersSpin">
+          <property name="styleSheet">
+           <string notr="true">font: 10pt &quot;Tw Cen MT Condensed Extra Bold&quot;;</string>
+          </property>
           <property name="minimum">
            <number>4</number>
           </property>
@@ -166,12 +181,15 @@
         <item>
          <widget class="QLabel" name="label_2">
           <property name="text">
-           <string>Количество паролей</string>
+           <string>Number of passwords</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QSpinBox" name="passCountSpin">
+          <property name="styleSheet">
+           <string notr="true">font: 10pt &quot;Tw Cen MT Condensed Extra Bold&quot;;</string>
+          </property>
           <property name="minimum">
            <number>1</number>
           </property>
@@ -195,14 +213,14 @@
          <string notr="true"/>
         </property>
         <property name="text">
-         <string>Создать</string>
+         <string>Create</string>
         </property>
        </widget>
       </item>
       <item row="1" column="2">
        <widget class="QPushButton" name="pushButton_2">
         <property name="text">
-         <string>Очистить</string>
+         <string>Clear</string>
         </property>
        </widget>
       </item>
@@ -212,7 +230,7 @@
       <item row="1" column="1">
        <widget class="QPushButton" name="pushButton_3">
         <property name="text">
-         <string>Копировать</string>
+         <string>Copy</string>
         </property>
        </widget>
       </item>

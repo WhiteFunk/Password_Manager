@@ -15,8 +15,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     setFixedSize(745,550);
 
-
-
     UnitsDbManager = std::make_unique<DatabaseManager>();
 
 
@@ -58,7 +56,7 @@ void MainWindow::on_pushButton_3_clicked()
 
 void MainWindow::on_pushButton_clicked()
 {
-      NewNoteWidget->show();
+    NewNoteWidget->show();
 }
 
 
@@ -66,10 +64,10 @@ void MainWindow::on_pushButton_2_clicked()
 
 {
 
-TableUnits->removeRow(indexRow);
+    TableUnits->removeRow(indexRow);
 
-TableUnits->select();
-ui->tableView->repaint();
+    TableUnits->select();
+    ui->tableView->repaint();
 
 
 }
@@ -100,16 +98,17 @@ void MainWindow::setWidgetStyle()
     "QWidget{"
         "background-color:#ddd;"
     "}"
-   "  QHeaderView::section {"
-         "background-color: pink;}"
+
     "QPushButton{"
+
         "background-color: qlineargradient(spread:pad, x1:0.585, y1:1, x2:0.506, y2:0, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(232, 232, 232, 255));"
         "border-radius:5px;"
         "border:1px solid #aaa;"
         "color:#555;"
     "}"
+
     "QPushButton:hover{"
-        "background-color: qlineargradient(spread:pad, x1:0.585, y1:1, x2:0.506, y2:0, stop:0 rgba(200, 200, 200, 200), stop:1 rgba(232, 232, 232, 255));"
+        "background-color: qlineargradient(spread:pad, x1:0.585, y1:1, x2:0.506, y2:0, stop:0 stop:0 rgba(200, 200, 200, 200), stop:1 rgba(232, 232, 232, 255));"
         "border-radius:5px;"
         "border:1px solid #0078d7;"
         "color:#111;"

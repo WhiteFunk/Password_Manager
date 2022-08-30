@@ -20,7 +20,6 @@ set(PROJECT_HEADERS
     addnewnote.h
     databasemanager.h
     mainwindow.h
-    unit_of_data.h
     widget.h
     )
 
@@ -29,7 +28,6 @@ set(PROJECT_SOURCES
     addnewnote.cpp
     databasemanager.cpp
     mainwindow.cpp
-    unit_of_data.cpp
     widget.cpp
 )
 
