@@ -21,6 +21,8 @@ Widget::Widget(QWidget *parent)
     flags = Qt::Tool;
     QWidget::setWindowFlags (flags);
 
+    this->setWindowTitle("Password Generator");
+
 }
 
 Widget::~Widget()
@@ -35,7 +37,6 @@ void Widget::on_pushButton_clicked()
     QString result = "";
 
  addLatin(result);
- addCiryllic(result);
  addSymbols(result);
  addDidgits(result);
 
@@ -92,27 +93,6 @@ void Widget::addLatin(QString &res)
 
 }
 
-void Widget::addCiryllic(QString &res)
-{
-    QString ciryllicLower ="абвгдеёжзиклмнопрстуфхцчшщъьыэюя";
-    QString ciryllicUpper =ciryllicLower.toUpper();
-    if(ui->ciryllicCheck->isChecked())
-    {
-        if(ui->ciryllicCombo->currentIndex()==1)
-        {
-            res += ciryllicUpper;
-        }
-        else if(ui->ciryllicCombo->currentIndex()==2)
-        {
-            res += ciryllicLower;
-        }
-        else
-        {
-            res +=ciryllicUpper + ciryllicLower;
-
-        }
-    }
-}
 
 void Widget::addDidgits(QString &res)
 {
@@ -157,6 +137,13 @@ bool didgitIsValid(const QString &didgits){
 void Widget::on_pushButton_2_clicked()
 {
     ui->plainTextEdit->clear();
+}
+
+
+void Widget::on_pushButton_3_clicked()
+{
+     QClipboard* c = QApplication::clipboard();
+       c->setText( ui->plainTextEdit->toPlainText() );
 }
 
 
@@ -265,11 +252,7 @@ void Widget::setWidgetStyle()
 }
 
 
-void Widget::on_pushButton_3_clicked()
-{
-     QClipboard* c = QApplication::clipboard();
-       c->setText( ui->plainTextEdit->toPlainText() );
-}
+
 
 
 

@@ -47,43 +47,7 @@
         <item>
          <widget class="QComboBox" name="latinCombo">
           <property name="styleSheet">
-           <string notr="true">font: 11pt &quot;Tw Cen MT Condensed Extra Bold&quot;;</string>
-          </property>
-          <item>
-           <property name="text">
-            <string>All</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Only capital letters</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Only lower case</string>
-           </property>
-          </item>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_5">
-        <item>
-         <widget class="QCheckBox" name="ciryllicCheck">
-          <property name="text">
-           <string>Cyrillic</string>
-          </property>
-          <property name="checked">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="ciryllicCombo">
-          <property name="styleSheet">
-           <string notr="true">font: 11pt &quot;Tw Cen MT Condensed Extra Bold&quot;;</string>
+           <string notr="true">font: 700 11pt &quot;Tw Cen MT Condensed&quot;;</string>
           </property>
           <item>
            <property name="text">

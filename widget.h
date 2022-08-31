@@ -29,8 +29,8 @@ private:
     void setWidgetStyle();
 
 private:
+
     void addLatin(QString &res);
-    void addCiryllic(QString &res);
     void addSymbols(QString &res);
     void addDidgits(QString &res);
 

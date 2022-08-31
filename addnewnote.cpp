@@ -8,13 +8,14 @@ AddNewNote::AddNewNote(QWidget *parent) :
     ui->setupUi(this);
     SetStyle();
 
-     setFixedSize(400,137);
+    setFixedSize(400,137);
 
 
     Qt::WindowFlags flags;
     flags = Qt::Tool;
     QWidget::setWindowFlags (flags);
 
+    this->setWindowTitle("Add New Note");
 }
 
 AddNewNote::~AddNewNote()

@@ -37,6 +37,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(NewNoteWidget,&AddNewNote::sendData,this,&MainWindow::setData);
 
+    this->setWindowTitle("Password Manager");
 }
 
 MainWindow::~MainWindow()
