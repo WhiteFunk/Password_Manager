@@ -1,3 +1,8 @@
+// Data from this video was used when creating this module
+// https://youtu.be/Si4QgunNhvw
+
+
+
 #include "widget.h"
 #include "ui_widget.h"
 #include <QDebug>
@@ -14,7 +19,7 @@ Widget::Widget(QWidget *parent)
     , ui(new Ui::Widget)
 {
     ui->setupUi(this);
-    this->setFixedSize(504,410);
+    this->setFixedSize(540,250);
     this->setWidgetStyle();
 
     Qt::WindowFlags flags;
@@ -152,6 +157,7 @@ void Widget::setWidgetStyle()
 {
     this->setStyleSheet(
     "QWidget{"
+        "font: 750 9pt Segoe UI;"
         "background-color:#ddd;"
     "}"
     "QLineEdit{"

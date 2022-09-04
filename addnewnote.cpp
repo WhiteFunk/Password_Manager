@@ -30,6 +30,7 @@ void AddNewNote::SetStyle()
     this->setStyleSheet(
     "QWidget{"
         "background-color:#ddd;"
+        "font: 900 9pt Segoe UI;"
     "}"
     "QLineEdit{"
         "border:1px solid #aaa;"

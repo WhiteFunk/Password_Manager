@@ -14,8 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">font: 700 11pt &quot;Tw Cen MT Condensed&quot;;
-color: rgb(0, 0, 0);</string>
+   <string notr="true">color: rgb(0, 0, 0);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="maximumSize">
@@ -52,6 +51,10 @@ color: rgb(0, 0, 0);</string>
     </item>
     <item>
      <widget class="QTableView" name="tableView">
+      <property name="styleSheet">
+       <string notr="true">font: 900 9pt Segoe UI;
+</string>
+      </property>
       <attribute name="horizontalHeaderCascadingSectionResizes">
        <bool>true</bool>
       </attribute>

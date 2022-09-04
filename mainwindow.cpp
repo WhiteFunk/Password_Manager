@@ -13,7 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
 
     ui->setupUi(this);
-    setFixedSize(745,550);
+    setFixedSize(760,550);
 
     UnitsDbManager = std::make_unique<DatabaseManager>();
 
@@ -98,10 +98,11 @@ void MainWindow::setWidgetStyle()
     this->setStyleSheet(
     "QWidget{"
         "background-color:#ddd;"
+        "font: 900 9pt Segoe UI;"
     "}"
 
-    "QPushButton{"
 
+    "QPushButton{"
         "background-color: qlineargradient(spread:pad, x1:0.585, y1:1, x2:0.506, y2:0, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(232, 232, 232, 255));"
         "border-radius:5px;"
         "border:1px solid #aaa;"
