@@ -13,4 +13,4 @@
                www.linkedin.com/in/ilya-odinets-238ba124a                               
 
 
-Simple password manager developed on С++\Qt using local database (SQLite)
+Simple password manager developed on С++\Qt using local storage (SQLite)
